@@ -1,0 +1,30 @@
+version: "2"
+checks:
+  argument-count:
+    enabled: true
+  complex-logic:
+    enabled: true
+  file-lines:
+    config:
+      threshold: 500
+  method-complexity:
+    config:
+      threshold: 20
+  method-count:
+    config:
+      threshold: 25
+  method-lines:
+    config:
+      threshold: 40
+  nested-control-flow:
+    config:
+      threshold: 5
+  return-statements:
+    config:
+      threshold: 6
+exclude_patterns:
+  - "deps/"
+  - "_build/"
+  - "frontend/node_modules/"
+  - "priv/static/"
+  - "test/"
