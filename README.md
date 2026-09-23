@@ -59,14 +59,9 @@ https://github.com/Daniil9452/trello-clone
 
 ## Деплой
 
-Ссылка на работающий сайт: _публикация на Render по `render.yaml`, ссылка добавляется после создания сервиса_.
+Ссылка на работающий сайт: https://doski-ixbr.onrender.com/sign-in
 
-Проект готов к выкладке на Render через `Dockerfile` и `render.yaml`:
-
-1. Залейте репозиторий на GitHub.
-2. В Render создайте Blueprint из `render.yaml` или Web Service с окружением Docker и базой PostgreSQL.
-3. Задайте `DATABASE_URL`, `SECRET_KEY_BASE` (`mix phx.gen.secret`), `GUARDIAN_SECRET`, `PHX_HOST` и `ECTO_SSL=true`, если база требует SSL.
-4. Секреты не храните в репозитории.
+Сайт опубликован на Render из `render.yaml`: сервис `doski` и база `doski-db`. Секреты задаются в панели Render и не хранятся в репозитории.
 
 Локальный PostgreSQL без установленного сервера можно поднять так: `docker compose up -d`.
 
