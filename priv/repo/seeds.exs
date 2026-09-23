@@ -1,0 +1,1 @@
+Doski.Seeds.run()
